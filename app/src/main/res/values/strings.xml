@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KisanHub Assignment</string>
+    <string-array name="metrics">
+        <item>Tmax</item>
+        <item>Tmin</item>
+        <item>Rainfall</item>
+    </string-array>
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="locations">
+        <item>UK</item>
+        <item>England</item>
+        <item>Scotland</item>
+        <item>Wales</item>
+    </string-array>
+</resources>
