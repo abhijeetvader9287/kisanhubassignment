@@ -32,7 +32,7 @@ public class ApiTest {
             @Override
             public void onResponse(Call<List<WeatherModel>> call, Response<List<WeatherModel>> response) {
                 int size = response.body().size();
-                assertEquals(true, size > 1);
+                assertEquals(true, size > 0);
             }
 
             @Override
