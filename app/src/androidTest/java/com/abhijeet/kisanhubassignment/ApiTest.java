@@ -1,4 +1,6 @@
 package com.abhijeet.kisanhubassignment;
+import android.util.Log;
+
 import com.abhijeet.kisanhubassignment.data.model.WeatherModel;
 import com.abhijeet.kisanhubassignment.data.remote.NetworkClient;
 import com.abhijeet.kisanhubassignment.data.remote.WeatherAPIService;
@@ -33,16 +35,17 @@ public class ApiTest {
             public void onResponse(Call<List<WeatherModel>> call, Response<List<WeatherModel>> response) {
                 int size = response.body().size();
                 assertEquals(true, size > 0);
+                Log.d("test done","test done");
             }
 
             @Override
             public void onFailure(Call<List<WeatherModel>> call, Throwable t) {
             }
         });
-        try {
-            Response<List<WeatherModel>> call = listCall.execute();
+        /*try {
+//            Response<List<WeatherModel>> call = listCall.execute();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }

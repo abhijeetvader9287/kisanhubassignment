@@ -12,17 +12,17 @@ import androidx.lifecycle.ViewModel;
  */
 public class WeatherViewModel extends ViewModel {
     /**
-     * The Movie repository.
+     * The Weather repository.
      */
-    WeatherRepository movieRepository;
+    WeatherRepository weatherRepository;
 
     /**
      * Instantiates a new Weather view model.
      *
-     * @param movieRepository the movie repository
+     * @param weatherRepository the weather repository
      */
-    public WeatherViewModel(WeatherRepository movieRepository) {
-        this.movieRepository = movieRepository;
+    public WeatherViewModel(WeatherRepository weatherRepository) {
+        this.weatherRepository = weatherRepository;
     }
 
     /**
@@ -33,7 +33,7 @@ public class WeatherViewModel extends ViewModel {
      * @return the weather
      */
     public LiveData<Resource<List<WeatherModel>>> getWeather(String metric, String location) {
-        return movieRepository.loadWeather(metric, location);
+        return weatherRepository.loadWeather(metric, location);
     }
 
     /**
@@ -42,6 +42,6 @@ public class WeatherViewModel extends ViewModel {
      * @return the years
      */
     public LiveData<List<Integer>> getYears() {
-        return movieRepository.getYears();
+        return weatherRepository.getYears();
     }
 }
